@@ -46,8 +46,10 @@ jobs:
       - name: Install Cognite Toolkit
         run: pip install cognite-toolkit==${{ env.TOOLKIT_VERSION }}
       - name: Build Toolkit Configurations
+        working-directory: ./ice-cream-dataops
         run: cdf-tk build --env=${{ matrix.environment }}
       - name: Deploy Toolkit Configurations
+        working-directory: ./ice-cream-dataops
         run: cdf-tk deploy --env=${{ matrix.environment }}
 
         
