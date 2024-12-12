@@ -24,20 +24,19 @@ variables:
 
       data_pipeline_oee_source_id: dc3a9c8a-81e2-494c-9396-f2e6a9f0138a
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readwrite_source_id: 08fff13c-465a-4a16-9588-b19161b42070
+      readwrite_source_id: f05cc39d-a2d1-483b-b95d-4eb6935dd961
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readonly_source_id: 08fff13c-465a-4a16-9588-b19161b42070
+      readonly_source_id: f05cc39d-a2d1-483b-b95d-4eb6935dd961
       # OBJECT ID FOR TEST/PROD ICAPI EXTRACTORS ENTRA GROUP
-      icapi_extractors_source_id: cb3eaca7-6f3c-4155-8031-46f2e57551f2
+      icapi_extractors_source_id: 64fc225e-11a5-4183-86f3-b935cc2438e0
       # Client Ids
       data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID} # replaced by .env
       data_pipeline_oee_client_secret: ${DATA_PIPELINE_OEE_CLIENT_SECRET} # replaced by .env
       icapi_extractors_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID} # replaced by .env
       icapi_extractors_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET} # replaced by .env
-      data_developer_source_id: 018309b4-d4ef-4749-8a94-c1d6a9691693
+      data_developer_source_id: b9c78d7e-6fe0-48e0-9d28-7f0942537e89
       # Variables shared by modules
       scheduleHourly: 14 1 * * *
-
       icapi_ds_external_id: ds_icapi
       use_cases:
         oee:
